@@ -1,0 +1,53 @@
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#"><h2>Estimation de Bien</h2></a>
+  </li>
+
+</ul>
+
+<div class="container">
+  <div class="row">
+
+  <div class="col-sm">
+      <form >
+        <div class="row mb-3">
+          <label >Places</label>
+
+          <input   type="text"  class="form-control"  placeholder="Nombre  de places parking  ou autres  dépendences" [(ngModel)]="newitem.Places"
+                   name="Place" class="form-control">
+              </div>
+
+              <div class="row mb-3">
+                <label >Surface</label>
+
+                <input  type="number" class="form-control"  placeholder="Surface batie du bien"[(ngModel)]="newitem.Surface"
+                   name="Surface" class="form-control">
+             </div>
+
+             <div class="row mb-3">
+              <label >Pièces</label>
+               <input type="number" class="form-control" placeholder="Nombre de Pieces principales avec salon"  [(ngModel)]="newitem.pieces"
+                   name="Pieces" class="form-control">
+             </div>
+
+             <div class="row mb-3">
+              <label >Langitude</label>
+                 <input type="number"  class="form-control" placeholder="Langitude"  [(ngModel)]="newitem.Langitude"
+                     name="Langitude" class="form-control">
+             </div>
+             <div class="row mb-3">
+              <label >Laltitude</label>
+
+                 <input type="number" class="form-control" placeholder="Laltitude"  [(ngModel)]="newitem.Latitude"
+                     name="laltitude" class="form-control">
+             </div>
+
+             <div class="d-grid gap-2">
+              <button type="submit"  (click)="add()"  class="btn btn-success">Valider</button>
+              </div>
+
+            </form>
+  </div>
+  </div>
+</div>
+

@@ -1,19 +1,24 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#"><h2>Estimation de Bien</h2></a>
-  </li>
 
-</ul>
+
+<nav class="navbar navbar-default" role="navigation">
+
+  <a class="navbar-brand" href="#">Estimation de Bien</a>
+
+</nav>
+
+
 
 <div class="container">
   <div class="row">
 
   <div class="col-sm">
       <form >
+        <table class="table">
+
         <div class="row mb-3">
           <label >Places</label>
 
-          <input   type="text"  class="form-control"  placeholder="Nombre  de places parking  ou autres  dépendences" [(ngModel)]="newitem.Places"
+          <input  type="text"  class="form-control"  placeholder="Nombre  de places parking  ou autres  dépendences" [(ngModel)]="newitem.Places"
                    name="Place" class="form-control">
               </div>
 
@@ -45,7 +50,7 @@
              <div class="d-grid gap-2">
               <button type="submit"  (click)="add()"  class="btn btn-success">Valider</button>
               </div>
-
+        </table>
             </form>
   </div>
   </div>
